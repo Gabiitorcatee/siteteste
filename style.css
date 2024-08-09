@@ -1,68 +1,67 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .cabeçalho {
-    background-color: rgb(102, 25, 227);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-  }
-  
-  .cabeçalho-imagem {
-    width: 20%;
-  }
-  
-  .cabeçalho-lista-item {
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Playfair Display', serif; /* Fonte atualizada */
+/* Definição das variáveis */
+:root {
+  --cor-primaria: rgb(102, 25, 227);
+  --cor-secundaria: #965ce1;
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Playfair Display', serif;
 }
 
-  
-  .cabeçalho-lista-item:hover {
-    background-color: rgb(110, 51, 211);
-  }
-  
-  .escritora {
-    background: linear-gradient(180deg, rgb(110, 51, 211) 0%, #965ce1 100%);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-  }
-  
-  .escritora-div-conteudo {
-    width: 35%;
-  }
-  
-  .escritora-titulo {
-    padding: 24px 0;
-  }
-  
-  .escritora-imagem {
-    width: 120px;
-  }
-  
-  /* Responsividade básica */
-  @media (max-width: 768px) {
-    .cabeçalho-imagem {
-      width: 50%;
-    }
-    .escritora-div-conteudo {
-      width: 80%;
-    }
-  }
+/* Estilos globais */
+body {
+  font-family: var(--fonte-principal);
+}
+
+/* Estilos do cabeçalho */
+.cabeçalho {
+  background-color: var(--cor-primaria);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.cabeçalho-imagem {
+  width: 20%;
+}
+
+.cabeçalho-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cabeçalho-lista-item {
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 16px;
+  transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.cabeçalho-lista-item:hover {
+  background-color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+/* Estilos da seção da escritora */
+.escritora {
+  background: linear-gradient(180deg, #6e33d3 0%, #965ce1 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.escritora-div-conteudo {
+  width: 35%;
+}
+
+.escritora-titulo {
+  padding: 24px 0;
+}
+
+.escritora-imagem {
+  width: 120px;
+}
