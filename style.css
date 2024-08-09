@@ -1,76 +1,80 @@
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Definição de variáveis */
 :root {
-  --primary-color: rgb(102, 25, 227);
-  --secondary-color: #6e33d3;
-  --font-family: "Poppins", sans-serif;
+  --cor-primaria: #6e33d3;
+  --cor-secundaria: #965ce1;
+  --cor-terciaria: #f3f4f6;
+  --cor-texto-claro: #ffffff;
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Playfair Display', serif;
 }
 
 body {
-  font-family: var(--font-family);
-}
-
-.cabeçalho {
-  background-color: var(--primary-color);
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 24px 0;
-}
-
-.cabeçalho-imagem {
-  width: 20%;
-}
-
-.cabeçalho-lista-item {
-  display: inline-block;
-  margin: 0 16px;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cabeçalho-lista-item:hover {
-  background-color: var(--secondary-color);
-  transform: scale(1.05);
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-terciaria);
+  color: #333;
 }
 
 .escritora {
-  background: linear-gradient(180deg, var(--secondary-color) 0%, #965ce1 100%);
-  color: white;
+  background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  color: var(--cor-texto-claro);
+  padding: 40px 20px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .escritora-div-conteudo {
-  width: 35%;
+  width: 60%;
 }
 
 .escritora-titulo {
-  padding: 24px 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.escritora-texto {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.escritora-imagem-container {
+  width: 35%;
+  text-align: center;
 }
 
 .escritora-imagem {
-  width: 120px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .cabeçalho-imagem {
-    width: 50%;
-  }
-  .escritora-div-conteudo {
-    width: 80%;
-  }
+.instagram-link {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
+.instagram-link a {
+  font-family: var(--fonte-secundaria);
+  font-size: 20px;
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram-link a:hover {
+  color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+.instagram-icon {
+  width: 40px;
+  margin-bottom: 8px;
+}
