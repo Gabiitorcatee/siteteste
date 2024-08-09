@@ -28,7 +28,9 @@
     font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+    font-family: 'Playfair Display', serif; /* Fonte atualizada */
+}
+
   
   .cabeçalho-lista-item:hover {
     background-color: rgb(110, 51, 211);
