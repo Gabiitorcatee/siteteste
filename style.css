@@ -38,17 +38,7 @@ body {
   width: 60%;
 }
 
-.escritora-titulo {
-  font-family: var(--fonte-secundaria);
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.escritora-texto {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
+…}
 
 .escritora-imagem-container {
   width: 35%;
