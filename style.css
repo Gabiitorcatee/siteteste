@@ -19,7 +19,7 @@ body {
 
 /* Estilos da Seção Escritora */
 .escritora {
-  background: linear-gradient(180deg, var(purple) 20%, var(rgb(196, 3, 196)) 100%);
+  background: linear-gradient(180deg, purple 20%, rgb(196, 3, 196) 100%);
   color: var(--cor-texto-claro);
   padding: 40px 20px;
   display: flex;
@@ -69,7 +69,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .instagram-link a::before {
   content: '';
   position: absolute;
@@ -90,7 +89,7 @@ body {
 }
 
 .instagram-link a:hover {
-  color: var(black);
+  color: black; /* ou substitua por uma variável válida */
   transform: scale(1.05);
 }
 
