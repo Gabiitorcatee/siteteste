@@ -14,12 +14,12 @@
 body {
   font-family: var(--fonte-principal);
   background-color: var(--cor-terciaria);
-  color: #333;
+  color: #0a0a0a;
 }
 
 /* Estilos da Seção Escritora */
 .escritora {
-  background: linear-gradient(180deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+  background: linear-gradient(180deg, var(purple) 20%, var(rgb(196, 3, 196)) 100%);
   color: var(--cor-texto-claro);
   padding: 40px 20px;
   display: flex;
@@ -90,7 +90,7 @@ body {
 }
 
 .instagram-link a:hover {
-  color: var(--cor-secundaria);
+  color: var(black);
   transform: scale(1.05);
 }
 
