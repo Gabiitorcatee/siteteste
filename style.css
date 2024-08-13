@@ -38,8 +38,6 @@ body {
   width: 60%;
 }
 
-…}
-
 .escritora-imagem-container {
   width: 35%;
   text-align: center;
@@ -69,6 +67,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .instagram-link a::before {
   content: '';
   position: absolute;
@@ -89,7 +88,7 @@ body {
 }
 
 .instagram-link a:hover {
-  color: black; /* ou substitua por uma variável válida */
+  color: black; /* Use preto diretamente, ou substitua por uma variável válida */
   transform: scale(1.05);
 }
 
@@ -102,3 +101,4 @@ body {
   width: 40px;
   margin-bottom: 8px;
 }
+
