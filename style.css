@@ -16,6 +16,39 @@ body {
   background-color: var(--cor-terciaria);
   color: #0a0a0a;
 }
+/* Estilos do Cabeçalho */
+.cabeçalho {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: slideDown 1s ease-out; /* Aplicar a animação */
+}
+
+.cabeçalho-imagem {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.cabeçalho-lista {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.cabeçalho-lista-item {
+  margin: 0 15px;
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto-claro);
+}
+
+.cabeçalho-lista-item:hover {
+  color: var(--cor-secundaria);
+}
+
 
 /* Estilos da Seção Escritora */
 .escritora {
