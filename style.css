@@ -23,7 +23,7 @@ body {
 .cabeçalho {
   background-color: #89188d; /* Cor de fundo do cabeçalho */
   color: #ffffff; /* Cor do texto */
-  padding: 20px;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
